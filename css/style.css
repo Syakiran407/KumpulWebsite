@@ -1,3 +1,32 @@
+/* ============================
+       Navigation Section 
+==============================*/
+
+.navbar-brand {
+    width: 150px;
+    height: 50px;
+}
+
+.nav-item {
+    margin-left: 80px;
+}
+
+.nav-item a {
+    font-size: 1.3em;
+}
+
+/* ============================
+    End of Navigation Section 
+==============================*/
+
+/* ============================
+       Header Section 
+==============================*/
+
+.visible{
+    display: inline-block !important;
+}
+
 .overlay {
 	width: 100%;
 	height: 100%;
@@ -7,21 +36,23 @@
 }
 
 .slides-navigation {
-    position: relative;
+    position: static;
     z-index: 6;
 }
 
 .slides-navigation .down {
 	width: 47px;
-	height: 47px;
+    height: 47px;
+    display: unset;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .slides-navigation a.down {
-    left: 50%;
     position: absolute;
-    bottom: 0;
+    bottom: 0; 
+    left: 50%;
+    z-index: 6;
 	background-image: url(../img/icons/down-arrow.png);
 }
 
@@ -59,3 +90,7 @@
 .titleMessage .heading .sub {
 	font-size: 23px;
 }
+
+/* ============================
+    End of Header Section 
+==============================*/
