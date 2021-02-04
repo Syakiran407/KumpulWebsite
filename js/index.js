@@ -1,11 +1,24 @@
-$(document).ready(function() {
+
+
+$(document).ready(function () {
     $('#slides').superslides();
 })
 
-$(document).ready(function() {
+$(document).ready(function () {
     $('#superslides').superslides();
 })
 
-$(document).ready(function() {
+$(document).ready(function () {
     $('#slider').superslides();
 })
+
+
+
+
+
+
+
+
+
+
+
