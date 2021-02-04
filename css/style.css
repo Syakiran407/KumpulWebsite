@@ -1,368 +1,593 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
 *, html, body {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  /* Hide scrollbars */
+}
+
+body {
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 /* ============================
-       Navigation Section 
+       Navigation Section
 ==============================*/
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  ;
+}
 
 .navbar-brand {
-    width: 200px;
-    height: 65px;
+  width: 200px;
+  height: 50px;
 }
 
 .nav-item {
-    margin-left: 80px;
+  margin-left: 80px;
 }
 
 .nav-item a {
-    font-size: 1.3em;
-    font-weight: 900;
+  font-size: 1.3em;
+  font-weight: 900;
 }
 
 .nav-item, .nav-link {
-    color: #333;
+  color: #333;
 }
 
 p {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 /* ============================
-    End of Navigation Section 
+    End of Navigation Section
 ==============================*/
-
 /* ============================
-       Header Section 
+       Header Section
 ==============================*/
-
-.visible{
-    display: inline-block !important;
+.visible {
+  display: inline-block !important;
 }
 
 .overlay {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	z-index: 3;
-	background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .down-navigation {
-    position: static;
-    z-index: 6;
+  position: static;
+  z-index: 6;
 }
 
 .down-navigation .down {
-	width: 47px;
-    height: 47px;
-    display: unset;
-	background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 9999;
+  width: 47px;
+  height: 47px;
+  display: unset;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 9999;
 }
 
 .down-navigation a.down {
-    position: absolute;
-    bottom: 0; 
-    left: 50%;
-    z-index: 6;
-	background-image: url(../img/icons/down-arrow.png);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 6;
+  background-image: url(../img/icons/down-arrow.png);
 }
 
 .homeTitleMessage {
-    position: absolute;
-    width: 100%;
-    height: 250px;
-    top: 50%;
-    z-index: 5;
-    text-align: right;
-    margin-top: -125px;
-    padding-right: 100px;
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  top: 50%;
+  z-index: 5;
+  text-align: right;
+  margin-top: -125px;
+  padding-right: 100px;
 }
 
 .homeTitleMessage .heading h1,
 .homeTitleMessage .heading p {
-	color: #fff;
-    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
-    letter-spacing: 7px;
+  color: #fff;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  letter-spacing: 3px;
 }
 
 .homeTitleMessage .heading h1 {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 .homeTitleMessage .heading p {
-    font-weight: 100;
+  font-weight: 100;
 }
 
 .homeTitleMessage .heading .main {
-    font-size: 50px;
-    text-shadow: 0px 7px 5px black;
+  font-size: 50px;
+  text-shadow: 0px 7px 5px black;
 }
 
 .homeTitleMessage .heading .sub {
-	font-size: 23px;
+  font-size: 23px;
 }
 
-
 /* ============================
-    End of Header Section 
+    End of Header Section
 ==============================*/
-
 /* ============================
-        Goal Section 
+        Goal Section
 ==============================*/
-
-.section, .goalSection{
-    padding: 100px 0;
-    background-color: #570d05;
-    color: #fff;
+.section, .whatWeDoSection {
+  padding: 100px 0;
+  background-color: #750000;
+  color: #fff;
 }
 
-.goalSection img, .goalSection h2 {
-    margin-bottom: 50px;
+.whatWeDoSection img, .whatWeDoSection h2 {
+  margin-bottom: 50px;
+}
+
+.whatWeDoSection img {
+  width: 20%;
+  /* height: 30%; */
 }
 
 .goal {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 
 .space {
-    padding-top: 164px; 
+  padding-top: 164px;
 }
 
 .aboutImage {
-    width: 50%;
+  width: 50%;
 }
 
-.slides-container-2 img{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
+.slides-container-2 img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 /* ============================
-    End of Goal Section 
+    End of Goal Section
 ==============================*/
+/* ============================
+        Portfolio Section
+==============================*/
+.PortfolioSection h1 {
+  font-size: 4.5em;
+}
+
+.PortfolioSection p {
+  font-size: 1.6em;
+}
 
 /* ============================
-       Flagship Section 
+    End of Portfolio Section
 ==============================*/
-
+/* ============================
+       Flagship Section
+==============================*/
 .flagshipSection {
-    background-color: #fff;
-    color: #333;
+  background-color: #fff;
+  color: #333;
 }
 
 .flagshipSection img {
-    width: 100%;
-    height: 250px;
-    object-fit: scale-down;
+  width: 30%;
+  height: 250px;
+  object-fit: contain;
+}
+
+.starrtupweekendImg {
+  width: 80% !important;
+}
+
+.bekupImg {
+  width: 50% !important;
 }
 
 /* ============================
-       Slides Section 
-==============================*/
-.slides-navigation .prev,
-.slides-navigation .next {
-	width: 47px;
-	height: 47px;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.row.slidesContent-1 {
-    display: inline-flex !important;
-}
-
-.slides-navigation a.prev {
-	left: 20px;
-	background-image: url(../img/icons/prev.png);
-}
-
-.slides-navigation a.next {
-	right: 20px;
-	background-image: url(../img/icons/next.png);
-}
-
-.slidesImage {
-    width:80% !important;
-    backface-visibility: hidden !important;
-    position: unset !important;
-    left: unset !important;
-    top: unset !important;
-    z-index: 1 !important;
-    height: unset !important;
-}
-
-.row.justify-content-md-center.slidesContent {
-    display: flex !important;
-}
-
-div#superslides {
-    height: 550px !important;
-}
-
-.slide-1, .slide-2 {
-    display: flex;
-    margin: 100px;
-}
-
-.row.slidesContent {
-    /* left: 0px !important; */
-}
-
-/* ============================
-       Partnership Section 
+       Partnership Section
 ==============================*/
 .partnerSection {
-    background-color: #fff;
-    color: #333;
+  background-color: #fff;
+  color: #333;
 }
+
 .partnerSection img {
-    width: 100%;
-    height: 250px;
-    object-fit: scale-down;
-    padding: 0px 67px;
+  width: 100%;
+  height: 156px;
+  object-fit: contain;
+  padding: 0px 20px;
 }
 
 /* ============================
-       Contact Section 
+       Contact Section
 ==============================*/
 .contactButton {
-    color: #570d05;
-    padding: 15px 34px;
-    display: inline-block;
-    margin-top: 50px;
-    border: 1px solid #fff;
-    border-radius: 40px;
-    font-size: 3em;
-    background-color: #fff;
-    font-weight: 900;
+  color: #750000;
+  padding: 19px 26px;
+  display: inline-block;
+  margin-top: 50px;
+  /* border: 1px solid #fff; */
+  border-radius: 40px;
+  font-size: 1.8em;
+  background-color: #fff;
+  font-weight: 900;
 }
 
 .contactButton:hover {
-	text-decoration: none;
-	color: #fff;
-	background-color: #333;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
 }
 
+.contactFormSection {
+  background-image: url(../img/city.jpg);
+  color: #fff;
+  background-color: #333;
+}
+
+.vl {
+  border-left: 6px solid white;
+  height: 500px;
+}
+
+.contactFormSection input {
+  width: 30%;
+  border-radius: 10px;
+  border-style: hidden;
+  padding: 14px 10px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+.sendButton {
+  color: #fff;
+  background-color: #750000;
+}
+
+.contactFormTitle {
+  font-size: 3em;
+}
 
 /* ============================
-       Footer Section 
+       Footer Section
 ==============================*/
-
 .copyrightSection {
-	background-color: #fff;
-	color: #000;
-	padding: 10px 5px;
+  background-color: #fff;
+  color: #000;
+  padding: 15px;
+  ;
 }
 
 .copyrightSection p {
-    font-size: 1em;
-    margin: auto;
+  font-size: 1em;
+  display: contents;
 }
 
-.socialIcons {
-    margin: auto;
+.socialIcons img {
+  width: 40px;
+  height: 40px;
 }
-
-
-
-
-
-
-
-
-
 
 #slider {
-    position: relative !important;
-    overflow: hidden !important;
-    width: 100% !important;
-    height: 500px !important;
-    color: #fff;
+  position: relative !important;
+  overflow: hidden !important;
+  width: 100% !important;
+  height: 500px !important;
+  color: #fff;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 200px;
+  background: #750000;
+  color: #fff;
+  text-align: center;
+}
+
+#slider img {
+  backface-visibility: hidden;
+  position: absolute;
+  left: 238px !important;
+  top: 119px !important;
+  z-index: -1;
+  max-width: none;
+  height: 300px !important;
+  width: 350px !important;
+}
+
+#slider .container {
+  margin: 150px 300px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+.quotes {
+  padding: 226px;
+  margin-left: 525px;
+}
+
+/* Startup Weekend Section */
+
+#startupweekendpage div img {
+  width: 100%;
+  height: 250px !important;
+  object-fit: cover !important;
+}
+
+.startupWeekendSection {
+  color: #333;
+  background-color: #fff;
+  /* margin: 0 50px; */
+}
+
+.headerImage {
+  max-width: 15%;
+  padding-bottom: 30px;
+}
+
+.description h2, .description p {
+  padding-bottom: 15px;
+}
+
+.squareImage {
+  padding-bottom: 50px;
+}
+
+.squareImage img {
+  width: 250px;
+  height: 250px;
+}
+
+.lightbox-gallery {
+  color: #000;
+  overflow-x: hidden
+}
+
+.lightbox-gallery p {
+  color: #fff
+}
+
+.lightbox-gallery h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: #fff
+}
+
+.img-fluid {
+  width: 300px !important;
+  height: 250px !important;
+  object-fit: cover !important;
+}
+
+@media (max-width:767px) {
+  .lightbox-gallery h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px
   }
-  
-  #slider ul {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    height: 200px;
-    list-style: none;
-  }
-  
-  #slider ul li {
-    position: relative;
-    display: block;
-    float: left;
-    margin: 0;
-    padding: 0;
-    width: 300px;
-    height: 200px;
-    background: #570d05;
-    color: #fff;
+}
+
+.lightbox-gallery .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 40px
+}
+
+.lightbox-gallery .intro p {
+  margin-bottom: 0
+}
+
+.lightbox-gallery .photos {
+  padding-bottom: 20px
+}
+
+.lightbox-gallery .item {
+  padding-bottom: 30px
+}
+
+/* =================
+  Bekup Page Section 
+==================== */
+#bekup div img {
+  width: 100%;
+  height: 250px !important;
+  object-fit: cover !important;
+}
+
+.bekupSection {
+  color: #333;
+  background-color: #fff;
+  /* margin: 0 50px; */
+}
+
+/* ============================
+  Gerakan Nasional Page Section 
+=============================== */
+#gerakan div img {
+  width: 100%;
+  height: 250px !important;
+  object-fit: cover !important;
+}
+
+.gerakanNasionalSection {
+  color: #333;
+  background-color: #fff;
+  /* margin: 0 50px; */
+}
+
+/* =====================
+  Daya Maya Page Section
+======================== */
+#daya div img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.dayaMayaSection {
+  color: #333;
+  background-color: #fff;
+  /* margin: 0 50px; */
+}
+
+/* =================
+    Slideshow
+================== */
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #750000;
+  color: #fff;
+}
+
+/* Slides */
+.mySlides {
+  display: -webkit-box;
+  padding: 80px;
+  text-align: center;
+}
+
+.mySlides img {
+  width: 20%;
+  height: 250px !important;
+  object-fit: cover !important;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #750000;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: cornflowerblue;
+}
+
+/* Adjust Navigation Item to center */
+@media screen and (max-width: 991px) {
+  .nav-item {
     text-align: center;
   }
-
-  #slider img {
-    backface-visibility: hidden;
-    position: absolute;
-    left: 238px !important;
-    top: 119px !important;
-    z-index: -1;
-    max-width: none;
-    height: 300px !important;
-    width: 350px !important;
-  }
-
-  #slider .container {
-    margin: 150px 300px;
-  }
-  
-  a.control_prev, a.control_next {
-    position: absolute;
-    top: 40%;
-    z-index: 999;
-    display: block;
-    padding: 4% 3%;
-    width: auto;
-    height: auto;
-    background: #2a2a2a;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 18px;
-    opacity: 0.8;
-    cursor: pointer;
-  }
-  
-  a.control_prev:hover, a.control_next:hover {
-    opacity: 1;
-    -webkit-transition: all 0.2s ease;
-  }
-  
-  a.control_prev {
-    border-radius: 0 2px 2px 0;
-  }
-  
-  a.control_next {
-    right: 0;
-    border-radius: 2px 0 0 2px;
-  }
-  
-  .slider_option {
-    position: relative;
-    margin: 10px auto;
-    width: 160px;
-    font-size: 18px;
-  }
-
-  .quotes {
-    padding: 226px;
-    margin-left: 525px;
-  }
+}
