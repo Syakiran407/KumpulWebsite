@@ -2,33 +2,30 @@
 
 *, html, body {
   font-family: 'Roboto', sans-serif !important;
+  
+ 
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  
+  overflow-y: scroll;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-
-  
-}
-
 body {
-    /* Hide scrollbars */
-    overflow: hidden;
-    overflow-y: scroll;
-    overflow-x: hidden;
+  overflow: hidden;
 }
-
-
 
 /* ============================
        Navigation Section
 ==============================*/
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 999;
@@ -225,6 +222,11 @@ p {
   padding: 0px 20px;
 }
 
+.telkomselLogo {
+  width: 300px !important;
+  object-fit: fill !important;
+}
+
 /* ============================
        Contact Section
 ==============================*/
@@ -267,8 +269,14 @@ p {
 }
 
 .sendButton {
-  color: #fff;
-  background-color: #750000;
+    background-color: #750000;
+    color: #fff;
+    padding: 8px 26px;
+    display: inline-block;
+    border-radius: 40px;
+    font-size: 1.3em;
+    font-weight: 900;
+    text-decoration: none;
 }
 
 .contactFormTitle {
@@ -420,7 +428,9 @@ a.control_next {
 
 .lightbox-gallery {
   color: #000;
-  overflow-x: hidden
+  overflow-x: hidden;
+  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .lightbox-gallery p {
@@ -644,7 +654,19 @@ q {
 
 @media screen and (max-width: 414px) {
   .homeTitleMessage {
-    top: 30%;
+    top: 50%;
+  }
+
+  .homeTitleMessage .heading .main {
+    font-size: 25px;
+  }
+
+  .homeTitleMessage .heading .sub {
+    font-size: 11px;
+  }
+
+  .PortfolioSection h1 {
+    font-size: 3.5em;
   }
 
   .contactFormSection input {
@@ -663,5 +685,34 @@ q {
   .partnerSection img {
     width: 50%;
   }
+
+  .mySlides {
+    max-height: 500px;
+  }
+
+  q, .nameAndPosition {
+    font-size: 10px;
+  }
+
+  .dot-container {
+    padding-top: 40px;
+  }
+
+  .telkomselLogo {
+    width: 214px !important;
+    height: 144px !important;
+  }
+
+  .startupWeekendSection .headerImage {
+    max-width: 60%;
+  }
+
+  @media screen and (max-width: 399px) {
+    .socialIcons {
+      padding: 0;
+      margin: 0 5px;
+    }
+  }
+
 }
 
