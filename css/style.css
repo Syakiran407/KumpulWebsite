@@ -2,14 +2,14 @@
 
 *, html, body {
   font-family: 'Roboto', sans-serif !important;
-  
- 
+
+
 }
 
 html, body {
   margin: 0;
   padding: 0;
-  
+
   overflow-y: scroll;
 }
 
@@ -29,6 +29,7 @@ body {
   top: 0;
   width: 100%;
   z-index: 999;
+  height: 82px;
 }
 
 .navbar-brand {
@@ -222,10 +223,10 @@ p {
   padding: 0px 20px;
 }
 
-.telkomselLogo {
+/* .telkomselLogo {
   width: 300px !important;
   object-fit: fill !important;
-}
+} */
 
 /* ============================
        Contact Section
@@ -249,7 +250,7 @@ p {
 }
 
 .contactFormSection {
-  background-image: url(../img/city.jpg);
+  background-image: url(../img/white-paper-bg.jpg);
   color: #fff;
   background-color: #333;
 }
@@ -294,7 +295,7 @@ p {
 }
 
 .copyrightSection p {
-  font-size: 1em;
+  font-size: 0.8em;
   display: contents;
 }
 
@@ -477,7 +478,7 @@ a.control_next {
 }
 
 /* =================
-  Bekup Page Section 
+  Bekup Page Section
 ==================== */
 #bekup div img {
   width: 100%;
@@ -492,7 +493,7 @@ a.control_next {
 }
 
 /* ============================
-  Gerakan Nasional Page Section 
+  Gerakan Nasional Page Section
 =============================== */
 #gerakan div img {
   width: 100%;
@@ -534,6 +535,7 @@ a.control_next {
   position: relative;
   background: #750000;
   color: #fff;
+  max-height: 700px;
 }
 
 .doInlineFlex {
@@ -546,11 +548,11 @@ a.control_next {
 
 .sliderDescription {
   text-align: justify;
-  margin: auto;
 }
 
 .nameAndPosition {
   padding-top: 30px;
+  font-size: 15px !important;
 }
 
 .profileImage {
@@ -560,7 +562,7 @@ a.control_next {
 /* Slides */
 .mySlides {
   display: -webkit-box;
-  padding: 80px;
+  padding: 150px 0;
   text-align: center;
 }
 
@@ -625,7 +627,7 @@ a.control_next {
 /* Add an italic font style to all quotes */
 q {
   font-style: italic;
-  font-size: 1.2em;
+  font-size: 20px;
 }
 
 /* Add a blue color to the author */
@@ -678,7 +680,7 @@ q {
     text-align: center;
   }
 
-  .lightbox-gallery .item { 
+  .lightbox-gallery .item {
     text-align: center;
   }
 
@@ -686,8 +688,8 @@ q {
     width: 50%;
   }
 
-  .mySlides {
-    max-height: 500px;
+  .slideshow-container {
+    max-height: 700px;
   }
 
   q, .nameAndPosition {
@@ -698,13 +700,18 @@ q {
     padding-top: 40px;
   }
 
-  .telkomselLogo {
+  /* .telkomselLogo {
     width: 214px !important;
     height: 144px !important;
-  }
+  } */
 
   .startupWeekendSection .headerImage {
     max-width: 60%;
+  }
+
+  .headerImage {
+    max-width: 40%;
+    padding-bottom: 30px;
   }
 
   @media screen and (max-width: 399px) {
@@ -715,4 +722,3 @@ q {
   }
 
 }
-
